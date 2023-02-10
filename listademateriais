@@ -1,0 +1,19 @@
+//Adicionando a lista de materiais
+let materiais = [
+{material:'Lápis', valor: 2},
+{material:'Caderno', valor: 10},
+{material: 'Caneta', valor: 3},
+{material: 'Mochila', valor: 87},
+{material: 'Borracha', valor: 1},
+{material: 'Estojo', valor: 15},
+{material: 'Apontador', valor: 6}
+];
+
+//Buscando os materiais acima de 5 reais através do filtro e a função callback
+let materiaisEconomicos = materiais.filter(function(materiais){
+        return materiais.valor > 5;
+});
+
+console.log(materiaisEconomicos);
+
+//Resposta do código: { material: 'Caderno', valor: 10 },{ material: 'Mochila', valor: 87 },{ material: 'Penal', valor: 15 },{ material: 'Apontador', valor: 6 }
